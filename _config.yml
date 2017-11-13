@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone:
+title: Jaykey
+subtitle: BlackBox
+description: 相见就是缘
+author: Jaykey Guo
+language: zh
+timezone: Beijing
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://JayGJianGuo.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -26,6 +26,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+archive:
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -72,10 +73,29 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: hexo-theme-Anisina
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: https://github.com/JayGJianGuo/JayGJianGuo.github.io.git
+
+
+post-default-img: https://ws4.sinaimg.cn/large/006tKfTcgy1flgprhhvkwj31kw16oqv5.jpg
+
+background-image: https://ws4.sinaimg.cn/large/006tKfTcgy1flgprhhvkwj31kw16oqv5.jpg
+#User
+##Header-img
+sidebar-avatar: https://ws2.sinaimg.cn/large/006tKfTcly1flgnrcadiij30go0gogpy.jpg
+##Socail-network
+twitter_username:
+zhihu_username: people/guo-jian-70/
+weibo_username: u/1935915260/home?wvr=5
+facebook_username:
+github_username: JayGJianGuo
+linkedin_username: in/键-郭-33937a153/
+##标签
+featured-tags: 个人特色
+  name: 个性
+  length: 10
