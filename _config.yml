@@ -10,6 +10,8 @@ author: Jaykey Guo
 language: zh
 timezone: Beijing
 
+##Sidebar
+sidebar-about-description: Good Luck
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://JayGJianGuo.github.io
@@ -83,17 +85,23 @@ deploy:
 
 
 post-default-img: https://ws4.sinaimg.cn/large/006tKfTcgy1flgprhhvkwj31kw16oqv5.jpg
-
+post-default-img-mobile: https://ws4.sinaimg.cn/large/006tKfTcgy1flgprhhvkwj31kw16oqv5.jpg
 background-image: https://ws4.sinaimg.cn/large/006tKfTcgy1flgprhhvkwj31kw16oqv5.jpg
 #User
 ##Header-img
 sidebar-avatar: https://ws2.sinaimg.cn/large/006tKfTcly1flgnrcadiij30go0gogpy.jpg
 ##Socail-network
 twitter_username:
-zhihu_username: people/guo-jian-70/
-weibo_username: u/1935915260/home?wvr=5
+zhihu_username: guo-jian-70/
+weibo_username: u/1935915260/home
 facebook_username:
 github_username: JayGJianGuo
-linkedin_username: in/键-郭-33937a153/
+linkedin_username: 郭键-33937a153/
 ##标签
 featured-tags: 个人特色
+
+clip-content: "?imageView2/1/w/1400/h/400/interlace/1/q/90"
+clip-avatar: "?imageView2/2/w/300/h/300/interlace/1/q/90"
+clip-home-post-bg: "?imageView2/1/w/800/h/300/interlace/1/q/70"
+
+header-img: https://ws2.sinaimg.cn/large/006tKfTcgy1fli17yf6lvj31kw0w0b2b.jpg
