@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="郭键在 Github 上的个人博客">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="https://ws2.sinaimg.cn/large/006tKfTcly1flgnrcadiij30go0gogpy.jpg">
+    <link rel="alternate" type="application/atom+xml" title="Jaykey" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        CSS学习笔记｜Jaykey&#39;s blog
+        
+    </title>
+
+    <link rel="canonical" href="http://JayGJianGuo.github.io/2017/01/22/ORID-fullstack/CSS学习笔记/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('https://ws2.sinaimg.cn/large/006tKfTcgy1fli17yf6lvj31kw0w0b2b.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Jaykey
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/archives">Archive</a>
+                    </li>
+                    <li>
+                      <a href="/tags">Tags</a>
+                    </li>
+					
+                    
+                        
+                    
+                        
+                    
+
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="https://ws2.sinaimg.cn/large/006tKfTcly1fljwyc35uxj31kw11x1l0.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('https://ws2.sinaimg.cn/large/006tKfTcly1fljwyc35uxj31kw11x1l0.jpg')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>CSS学习笔记</h1>
+                    
+                    <span class="meta">
+                         作者 Jaykey Guo
+                        <span>
+                          日期 2017-01-22
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#ORID"
+                           title="ORID">ORID</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            CSS学习笔记
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <h4 id="层叠次序"><a href="#层叠次序" class="headerlink" title="层叠次序"></a>层叠次序</h4><p><strong>当同一个 HTML 元素被不止一个样式定义时，会使用哪个样式呢？</strong></p>
+<p>一般而言，所有的样式会根据下面的规则层叠于一个新的虚拟样式表中，其中数字 4 拥有最高的优先权。</p>
+<ol>
+<li>浏览器缺省设置</li>
+<li>外部样式表</li>
+<li>内部样式表（位于 <head> 标签内部）</head></li>
+<li>内联样式（在 HTML 元素内部）</li>
+</ol>
+<p>因此，内联样式（在 HTML 元素内部）拥有最高的优先权，这意味着它将优先于以下的样式声明：<head> 标签中的样式声明，外部样式表中的样式声明，或者浏览器中的样式声明（缺省值）。</head></p>
+<p><img src="https://ww3.sinaimg.cn/large/006tKfTcgy1fbzgnptmtij30r20dsgom.jpg" alt=""></p>
+<h4 id="颜色的不同写法："><a href="#颜色的不同写法：" class="headerlink" title="颜色的不同写法："></a>颜色的不同写法：</h4><p>十六进制——p { color: #ff0000; }</p>
+<p>CSS缩写——p { color: #f00; }</p>
+<p>RGB—— p { color: rgb(255,0,0); }</p>
+<p>​        p { color: rgb(100%,0%,0%); }</p>
+<h4 id="空格和大小写"><a href="#空格和大小写" class="headerlink" title="空格和大小写"></a>空格和大小写</h4><p>大多数样式表包含不止一条规则，而大多数规则包含不止一个声明。多重声明和空格的使用使得样式表更容易被编辑：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  color: #000;</span><br><span class="line">  background: #fff;</span><br><span class="line">  margin: 0;</span><br><span class="line">  padding: 0;</span><br><span class="line">  font-family: Georgia, Palatino, serif;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>是否包含空格不会影响 CSS 在浏览器的工作效果，同样，与 XHTML 不同，CSS 对大小写不敏感。不过存在一个例外：如果涉及到与 HTML 文档一起工作的话，class 和 id 名称对大小写是敏感的。</p>
+<h4 id="id-选择器"><a href="#id-选择器" class="headerlink" title="id 选择器"></a>id 选择器</h4><p><strong>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。</strong></p>
+<p><strong>id 选择器以 “#” 来定义。</strong></p>
+<p>下面的两个 id 选择器，第一个可以定义元素的颜色为红色，第二个定义元素的颜色为绿色：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#red &#123;color:red;&#125;</span><br><span class="line">#green &#123;color:green;&#125;</span><br></pre></td></tr></table></figure>
+<p>下面的 HTML 代码中，id 属性为 red 的 p 元素显示为红色，而 id 属性为 green 的 p 元素显示为绿色。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id=&quot;red&quot;&gt;这个段落是红色。&lt;/p&gt;</span><br><span class="line">&lt;p id=&quot;green&quot;&gt;这个段落是绿色。&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p>注意：id 属性只能在每个 HTML 文档中出现一次。</p>
+<h4 id="在-CSS-中，类选择器以一个点号显示："><a href="#在-CSS-中，类选择器以一个点号显示：" class="headerlink" title="在 CSS 中，类选择器以一个点号显示："></a>在 CSS 中，类选择器以一个点号显示：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.center &#123;text-align: center&#125;</span><br></pre></td></tr></table></figure>
+<p>在上面的例子中，所有拥有 center 类的 HTML 元素均为居中。</p>
+<p>在下面的 HTML 代码中，h1 和 p 元素都有 center 类。这意味着两者都将遵守 “.center” 选择器中的规则。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1 class=&quot;center&quot;&gt;</span><br><span class="line">This heading will be center-aligned</span><br><span class="line">&lt;/h1&gt;</span><br><span class="line"></span><br><span class="line">&lt;p class=&quot;center&quot;&gt;</span><br><span class="line">This paragraph will also be center-aligned.</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p>注意：类名的第一个字符不能使用数字！它无法在 Mozilla 或 Firefox 中起作用。</p>
+<h2 id="CSS-选择器参考手册"><a href="#CSS-选择器参考手册" class="headerlink" title="CSS 选择器参考手册"></a>CSS 选择器参考手册</h2><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.w3school.com.cn/cssref/selector_attribute.asp" target="_blank" rel="external">[<em>attribute</em>]</a></td>
+<td>用于选取带有指定属性的元素。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/cssref/selector_attribute_value.asp" target="_blank" rel="external">[<em>attribute</em>=<em>value</em>]</a></td>
+<td>用于选取带有指定属性和值的元素。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/cssref/selector_attribute_value_contain.asp" target="_blank" rel="external">[<em>attribute</em>~=<em>value</em>]</a></td>
+<td>用于选取属性值中包含指定词汇的元素。</td>
+</tr>
+<tr>
+<td>[[<em>attribute</em>\</td>
+<td>=<em>value</em>]](<a href="http://www.w3school.com.cn/cssref/selector_attribute_value_start.asp" target="_blank" rel="external">http://www.w3school.com.cn/cssref/selector_attribute_value_start.asp</a>)</td>
+<td>用于选取带有以指定值开头的属性值的元素，该值必须是整个单词。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/cssref/selector_attr_begin.asp" target="_blank" rel="external">[<em>attribute</em>^=<em>value</em>]</a></td>
+<td>匹配属性值以指定值开头的每个元素。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/cssref/selector_attr_end.asp" target="_blank" rel="external">[<em>attribute</em>$=<em>value</em>]</a></td>
+<td>匹配属性值以指定值结尾的每个元素。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/cssref/selector_attr_contain.asp" target="_blank" rel="external">[<em>attribute**=</em>value*]</a></td>
+<td>匹配属性值中包含指定值的每个元素。</td>
+</tr>
+</tbody>
+</table>
+
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2017/01/26/ORID-fullstack/170126-ORID/" data-toggle="tooltip" data-placement="top"
+                           title="写点文章吧，三个主题">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2017/01/22/ORID-fullstack/HTML学习记录/" data-toggle="tooltip" data-placement="top"
+                           title="HTML学习笔记">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#层叠次序"><span class="toc-text">层叠次序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#颜色的不同写法："><span class="toc-text">颜色的不同写法：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#空格和大小写"><span class="toc-text">空格和大小写</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#id-选择器"><span class="toc-text">id 选择器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#在-CSS-中，类选择器以一个点号显示："><span class="toc-text">在 CSS 中，类选择器以一个点号显示：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-选择器参考手册"><span class="toc-text">CSS 选择器参考手册</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#ORID"
+                           title="ORID">ORID</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/guo-jian-70/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/JayGJianGuo">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/郭键-33937a153/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Jaykey 2017
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://JayGJianGuo.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="https://ws2.sinaimg.cn/large/006tKfTcly1flgnrcadiij30go0gogpy.jpg">
+</body>
+
+</html>

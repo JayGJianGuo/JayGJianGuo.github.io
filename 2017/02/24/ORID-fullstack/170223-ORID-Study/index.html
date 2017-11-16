@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="郭键在 Github 上的个人博客">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="https://ws2.sinaimg.cn/large/006tKfTcly1flgnrcadiij30go0gogpy.jpg">
+    <link rel="alternate" type="application/atom+xml" title="Jaykey" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        ORID-170223｜Jaykey&#39;s blog
+        
+    </title>
+
+    <link rel="canonical" href="http://JayGJianGuo.github.io/2017/02/24/ORID-fullstack/170223-ORID-Study/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('https://ws2.sinaimg.cn/large/006tKfTcgy1fli17yf6lvj31kw0w0b2b.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Jaykey
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/archives">Archive</a>
+                    </li>
+                    <li>
+                      <a href="/tags">Tags</a>
+                    </li>
+					
+                    
+                        
+                    
+                        
+                    
+
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="https://ws2.sinaimg.cn/large/006tKfTcly1fljwyc35uxj31kw11x1l0.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('https://ws2.sinaimg.cn/large/006tKfTcly1fljwyc35uxj31kw11x1l0.jpg')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>ORID-170223</h1>
+                    
+                    <span class="meta">
+                         作者 Jaykey Guo
+                        <span>
+                          日期 2017-02-24
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#ORID"
+                           title="ORID">ORID</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            ORID-170223
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <p>170223-ORID-Study</p>
+<h3 id="吴军-·-硅谷来信-135-美国基础教育那么差，为什么能获得那么多诺贝尔奖"><a href="#吴军-·-硅谷来信-135-美国基础教育那么差，为什么能获得那么多诺贝尔奖" class="headerlink" title="吴军 · 硅谷来信-135|美国基础教育那么差，为什么能获得那么多诺贝尔奖"></a><strong>吴军 · 硅谷来信-135|美国基础教育那么差，为什么能获得那么多诺贝尔奖</strong></h3><p>美国的基础教育更加平均，包容不同成绩的人，从20-100分的都有，而国内的教育更追求及格，也就是更向往“平均”和“平庸”，有个及格就足够了，这样就没有更多的人愿意去找到合适自己的部分去发展。</p>
+<p>美国的基础教育中存在不少的问题，这也是显而易见的，但是美国也对精英阶层进行大量的鼓励和支持，这才使得美国本土会出很多诺贝尔奖得主。</p>
+<p>吴军说：”年轻人要多学习知识，而不是对已经掌握的知识来回来去炒回锅饭。多做一两道难题，考试多得两分只能证明是一个会考试的学生，即使做到了这一点，也没有什么好自豪的，它对将来的成长帮助不大。但是，如果多学很多知识和技能，多发展自己的特长，则能够帮助一个人从众人中脱颖而出。“</p>
+<p>这也正是最好的方式来学习，在过年的学习或许还只是流于表面，学会一样东西之后，并不会对一个人的生活带来改变，更多的只是知道了这个信息而已，学习最终的结果应该是改变我们的习惯，这个成甲所说的”知识“的定义有类似的地方，我应该尝试将学到的信息，迁移到我的行动中，只有”践行“之后，那些信息才会转化为知识！</p>
+<hr>
+<h3 id="万维刚-·-精英日课-132-一个大尺度的话题"><a href="#万维刚-·-精英日课-132-一个大尺度的话题" class="headerlink" title="万维刚 · 精英日课-132|一个大尺度的话题"></a><strong>万维刚 · 精英日课-132|一个大尺度的话题</strong></h3><p>大！</p>
+<p>大了一点就不一样了，这里的大应该是在数量级上的差异，而这个差异的产生是在不同的维度上的小差异造成的，最后是一个乘数效应，文中的例子很清晰，一个人比你大五倍，最终他的承重力要比你大25倍。很多的事情不再是简单的正比例关系，可能是幂指函数的关系。</p>
+<p>大了，就不一样了。</p>
+<p>在不同的维度上考虑的东西就不一样了，大了之后，去看小事情，就是用“部分”已知去解释已知，顺理成章的事情，但若是从小的角度去看大的事情，那就完全是两个概念了。这样的话是用未知去解释未知，怎么样都不可能说通的，更不可能理解。</p>
+<hr>
+
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2017/02/26/ORID-fullstack/170226-广州MeetUp-分享总结-郭键/" data-toggle="tooltip" data-placement="top"
+                           title="ORID-170226">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2017/02/23/ORID-fullstack/170223-当运动成为一种享受/" data-toggle="tooltip" data-placement="top"
+                           title="ORID-170223">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#吴军-·-硅谷来信-135-美国基础教育那么差，为什么能获得那么多诺贝尔奖"><span class="toc-text">吴军 · 硅谷来信-135|美国基础教育那么差，为什么能获得那么多诺贝尔奖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#万维刚-·-精英日课-132-一个大尺度的话题"><span class="toc-text">万维刚 · 精英日课-132|一个大尺度的话题</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#ORID"
+                           title="ORID">ORID</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/guo-jian-70/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/JayGJianGuo">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/郭键-33937a153/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Jaykey 2017
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://JayGJianGuo.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="https://ws2.sinaimg.cn/large/006tKfTcly1flgnrcadiij30go0gogpy.jpg">
+</body>
+
+</html>
