@@ -178,14 +178,15 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">引用链接</span><br><span class="line">&lt;a href=&quot;http://www.w3school.com.cn&quot;&gt;This is a link&lt;/a&gt;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">引用图片~编辑图片大小</span><br><span class="line">&lt;img src=&quot;w3school.jpg&quot; width=&quot;104&quot; height=&quot;142&quot; /&gt;</span><br></pre></td></tr></table></figure>
-<p>####</p>
-<h4 id="空的-HTML-元素"><a href="#空的-HTML-元素" class="headerlink" title="空的 HTML 元素"></a>空的 HTML 元素</h4><p>没有内容的 HTML 元素被称为空元素。空元素是在开始标签中关闭的。</p>
-<p><br> 就是没有关闭标签的空元素（<br> 标签定义换行）。</p>
+                <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">引用链接</span><br><span class="line">&lt;a href=&quot;http://www.w3school.com.cn&quot;&gt;This is a link&lt;/a&gt;</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">引用图片~编辑图片大小</span><br><span class="line">&lt;img src=&quot;w3school.jpg&quot; width=&quot;104&quot; height=&quot;142&quot; /&gt;</span><br></pre></td></tr></table></figure></p>
+<h4></h4>
+<h4>空的 HTML 元素</h4>
+<p>没有内容的 HTML 元素被称为空元素。空元素是在开始标签中关闭的。</p>
+<p>&lt;br&gt; 就是没有关闭标签的空元素（&lt;br&gt; 标签定义换行）。</p>
 <p>在 XHTML、XML 以及未来版本的 HTML 中，所有元素都必须被关闭。</p>
-<p>在开始标签中添加斜杠，比如 <br>，是关闭空元素的正确方法，HTML、XHTML 和 XML 都接受这种方式。</p>
-<p>即使 <br> 在所有浏览器中都是有效的，但使用 <br> 其实是更长远的保障。</p>
+<p>在开始标签中添加斜杠，比如 &lt;br /&gt;，是关闭空元素的正确方法，HTML、XHTML 和 XML 都接受这种方式。</p>
+<p>即使 &lt;br&gt; 在所有浏览器中都是有效的，但使用 &lt;br /&gt; 其实是更长远的保障。</p>
 <table>
 <thead>
 <tr>
@@ -195,29 +196,36 @@
 </thead>
 <tbody>
 <tr>
-<td><p>段落 </p></td>
-<td>定义段落。多个<p>， 只需要一个</p>结尾。</td>
+<td>&lt;p&gt;段落 &lt;/p&gt;</td>
+<td>定义段落。多个&lt;p&gt;， 只需要一个&lt;/p&gt;结尾。</td>
 </tr>
 <tr>
-<td><br> 换行</td>
+<td>&lt;br&gt; 换行</td>
 <td>插入单个折行（换行）。</td>
 </tr>
 </tbody>
 </table>
-<h2 id="HTML-水平线"><a href="#HTML-水平线" class="headerlink" title="HTML 水平线"></a>HTML 水平线</h2><p><hr> 标签在 HTML 页面中创建水平线。</p>
+<h2>HTML 水平线</h2>
+<p>&lt;hr /&gt; 标签在 HTML 页面中创建水平线。</p>
 <p>hr 元素可用于分隔内容。</p>
 <p>居中对齐|长度为50|宽度为100|不带阴影的水平线：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;hr align=&quot;center&quot; width=&quot;50%&quot; size=&quot;100px&quot; noshade=&quot;noshade&quot; /&gt;</span><br><span class="line">[align 不适用于div中，在HTML4.0]</span><br></pre></td></tr></table></figure>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;hr align=&quot;center&quot; width=&quot;50%&quot; size=&quot;100px&quot; noshade=&quot;noshade&quot; /&gt;</span><br><span class="line">[align 不适用于div中，在HTML4.0]</span><br></pre></td></tr></table></figure></p>
 <p><img src="https://ww3.sinaimg.cn/large/006tKfTcgy1fbzdq8yymhj31do0iejuq.jpg" alt=""></p>
 <p><img src="https://ww1.sinaimg.cn/large/006tKfTcgy1fbzdqfhg91j31dy0rqjwm.jpg" alt=""></p>
-<h2 id="HTML-变量格式化"><a href="#HTML-变量格式化" class="headerlink" title="HTML 变量格式化"></a>HTML 变量格式化</h2><p>HTML <em>* 元素定义</em>数学变量*：</p>
-<h6 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Einstein wrote:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;&lt;var&gt;E = m c&lt;sup&gt;2&lt;/sup&gt;&lt;/var&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-<p>HTML全局属性：<a href="http://www.w3school.com.cn/tags/html_ref_standardattributes.asp" target="_blank" rel="external">http://www.w3school.com.cn/tags/html_ref_standardattributes.asp</a></p>
-<p>HTML事件属性：<a href="http://www.w3school.com.cn/tags/html_ref_eventattributes.asp" target="_blank" rel="external">http://www.w3school.com.cn/tags/html_ref_eventattributes.asp</a></p>
-<p>######</p>
-<h6 id="target-”-blank”-在新的窗口中打开连接"><a href="#target-”-blank”-在新的窗口中打开连接" class="headerlink" title="[target=”_blank”]在新的窗口中打开连接"></a>[target=”_blank”]在新的窗口中打开连接</h6><h4 id="target-”-self”-在本窗口打开连接"><a href="#target-”-self”-在本窗口打开连接" class="headerlink" title="[target=”_self”]在本窗口打开连接"></a>[target=”_self”]在本窗口打开连接</h4><p><img src="https://ww1.sinaimg.cn/large/006tNbRwgy1fc21uut1dbj30yi1pc1kx.jpg" alt=""></p>
-<h6 id="给图片加上超链接"><a href="#给图片加上超链接" class="headerlink" title="给图片加上超链接"></a>给图片加上超链接</h6><p><img src="https://ww3.sinaimg.cn/large/006tNbRwgy1fc22bz8kiaj30yi12uwjw.jpg" alt=""></p>
-<h5 id="table"><a href="#table" class="headerlink" title="table"></a>table</h5><p>row——行</p>
+<h2>HTML 变量格式化</h2>
+<p>HTML ** 元素定义<em>数学变量</em>：</p>
+<h6>实例</h6>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Einstein wrote:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;&lt;var&gt;E = m c&lt;sup&gt;2&lt;/sup&gt;&lt;/var&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<p>HTML全局属性：http://www.w3school.com.cn/tags/html_ref_standardattributes.asp</p>
+<p>HTML事件属性：http://www.w3school.com.cn/tags/html_ref_eventattributes.asp</p>
+<h6></h6>
+<h6>[target=&quot;_blank&quot;]在新的窗口中打开连接</h6>
+<h4>[target=&quot;_self&quot;]在本窗口打开连接</h4>
+<p><img src="https://ww1.sinaimg.cn/large/006tNbRwgy1fc21uut1dbj30yi1pc1kx.jpg" alt=""></p>
+<h6>给图片加上超链接</h6>
+<p><img src="https://ww3.sinaimg.cn/large/006tNbRwgy1fc22bz8kiaj30yi12uwjw.jpg" alt=""></p>
+<h5>table</h5>
+<p>row——行</p>
 <p>column——列</p>
 <p>tr——table row——横行</p>
 <p>td——table column——竖列</p>
@@ -255,7 +263,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#空的-HTML-元素"><span class="toc-text">空的 HTML 元素</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-水平线"><span class="toc-text">HTML 水平线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-变量格式化"><span class="toc-text">HTML 变量格式化</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#实例"><span class="toc-text">实例</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#target-”-blank”-在新的窗口中打开连接"><span class="toc-text">[target=”_blank”]在新的窗口中打开连接</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#target-”-self”-在本窗口打开连接"><span class="toc-text">[target=”_self”]在本窗口打开连接</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#给图片加上超链接"><span class="toc-text">给图片加上超链接</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#table"><span class="toc-text">table</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-text"></span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-text">空的 HTML 元素</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-text">HTML 水平线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-text">HTML 变量格式化</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#undefined"><span class="toc-text">实例</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#undefined"><span class="toc-text"></span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#undefined"><span class="toc-text">[target="_blank"]在新的窗口中打开连接</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-text">[target="_self"]在本窗口打开连接</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#undefined"><span class="toc-text">给图片加上超链接</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-text">table</span></a></li></ol></li></ol>
                 </div>
             </div>
         </div>

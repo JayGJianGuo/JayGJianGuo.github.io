@@ -185,16 +185,17 @@
 <ol>
 <li>浏览器缺省设置</li>
 <li>外部样式表</li>
-<li>内部样式表（位于 <head> 标签内部）</head></li>
+<li>内部样式表（位于 &lt;head&gt; 标签内部）</li>
 <li>内联样式（在 HTML 元素内部）</li>
 </ol>
-<p>因此，内联样式（在 HTML 元素内部）拥有最高的优先权，这意味着它将优先于以下的样式声明：<head> 标签中的样式声明，外部样式表中的样式声明，或者浏览器中的样式声明（缺省值）。</head></p>
+<p>因此，内联样式（在 HTML 元素内部）拥有最高的优先权，这意味着它将优先于以下的样式声明：&lt;head&gt; 标签中的样式声明，外部样式表中的样式声明，或者浏览器中的样式声明（缺省值）。</p>
 <p>颜色的不同写法：</p>
 <p>十六进制——p { color: #ff0000; }</p>
 <p>CSS缩写——p { color: #f00; }</p>
 <p>RGB—— p { color: rgb(255,0,0); }</p>
-<pre><code>p { color: rgb(100%,0%,0%); }
-</code></pre><p>空格和大小写</p>
+<pre><code>	p { color: rgb(100%,0%,0%); }
+</code></pre>
+<p>空格和大小写</p>
 <p>大多数样式表包含不止一条规则，而大多数规则包含不止一个声明。多重声明和空格的使用使得样式表更容易被编辑：</p>
 <pre><code>body {
   color: #000;
@@ -203,21 +204,25 @@
   padding: 0;
   font-family: Georgia, Palatino, serif;
   }
-</code></pre><p>是否包含空格不会影响 CSS 在浏览器的工作效果，同样，与 XHTML 不同，CSS 对大小写不敏感。不过存在一个例外：如果涉及到与 HTML 文档一起工作的话，class 和 id 名称对大小写是敏感的。</p>
+</code></pre>
+<p>是否包含空格不会影响 CSS 在浏览器的工作效果，同样，与 XHTML 不同，CSS 对大小写不敏感。不过存在一个例外：如果涉及到与 HTML 文档一起工作的话，class 和 id 名称对大小写是敏感的。</p>
 <p>id 选择器</p>
 <p>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。</p>
-<p>id 选择器以 “#” 来定义。</p>
+<p>id 选择器以 &quot;#&quot; 来定义。</p>
 <p>下面的两个 id 选择器，第一个可以定义元素的颜色为红色，第二个定义元素的颜色为绿色：</p>
 <pre><code>#red {color:red;}
 #green {color:green;}
-</code></pre><p>下面的 HTML 代码中，id 属性为 red 的 p 元素显示为红色，而 id 属性为 green 的 p 元素显示为绿色。</p>
+</code></pre>
+<p>下面的 HTML 代码中，id 属性为 red 的 p 元素显示为红色，而 id 属性为 green 的 p 元素显示为绿色。</p>
 <pre><code>&lt;p id=&quot;red&quot;&gt;这个段落是红色。&lt;/p&gt;
 &lt;p id=&quot;green&quot;&gt;这个段落是绿色。&lt;/p&gt;
-</code></pre><p>注意：id 属性只能在每个 HTML 文档中出现一次。</p>
+</code></pre>
+<p>注意：id 属性只能在每个 HTML 文档中出现一次。</p>
 <p>在 CSS 中，类选择器以一个点号显示：</p>
 <pre><code>.center {text-align: center}
-</code></pre><p>在上面的例子中，所有拥有 center 类的 HTML 元素均为居中。</p>
-<p>在下面的 HTML 代码中，h1 和 p 元素都有 center 类。这意味着两者都将遵守 “.center” 选择器中的规则。</p>
+</code></pre>
+<p>在上面的例子中，所有拥有 center 类的 HTML 元素均为居中。</p>
+<p>在下面的 HTML 代码中，h1 和 p 元素都有 center 类。这意味着两者都将遵守 &quot;.center&quot; 选择器中的规则。</p>
 <pre><code>&lt;h1 class=&quot;center&quot;&gt;
 This heading will be center-aligned
 &lt;/h1&gt;
@@ -225,9 +230,17 @@ This heading will be center-aligned
 &lt;p class=&quot;center&quot;&gt;
 This paragraph will also be center-aligned.
 &lt;/p&gt;
-</code></pre><p>注意：类名的第一个字符不能使用数字！它无法在 Mozilla 或 Firefox 中起作用。</p>
+</code></pre>
+<p>注意：类名的第一个字符不能使用数字！它无法在 Mozilla 或 Firefox 中起作用。</p>
 <p>CSS 选择器参考手册</p>
-<p>  选择器                     描述<br>  [attribute]             用于选取带有指定属性的元素。<br>  [attribute=value]       用于选取带有指定属性和值的元素。<br>  [attribute~=value]      用于选取属性值中包含指定词汇的元素。<br>  [attribute|=value]     用于选取带有以指定值开头的属性值的元素，该值必须是整个单词。<br>  [attribute^=value]      匹配属性值以指定值开头的每个元素。<br>  [attribute$=value]      匹配属性值以指定值结尾的每个元素。<br>  [attribute<em>*=value</em>]    匹配属性值中包含指定值的每个元素。             </p>
+<p>选择器                 	描述<br>
+[attribute]         	用于选取带有指定属性的元素。<br>
+[attribute=value]   	用于选取带有指定属性和值的元素。<br>
+[attribute~=value]  	用于选取属性值中包含指定词汇的元素。<br>
+[attribute|=value] 	用于选取带有以指定值开头的属性值的元素，该值必须是整个单词。
+[attribute^=value]  	匹配属性值以指定值开头的每个元素。<br>
+[attribute$=value]  	匹配属性值以指定值结尾的每个元素。<br>
+[attribute**=value*]	匹配属性值中包含指定值的每个元素。</p>
 
                 <hr>
                 
