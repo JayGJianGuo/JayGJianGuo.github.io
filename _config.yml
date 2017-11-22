@@ -12,7 +12,7 @@ subtitle: BlackBox
 description: "郭键在 Github 上的个人博客"
 author: Jaykey Guo
 language: zh
-timezone: Beijing
+timezone: Asia/Shanghai
 
 # custom Site settings
 # more detail check out docs
@@ -110,7 +110,7 @@ background-image: https://ws4.sinaimg.cn/large/006tKfTcgy1flgprhhvkwj31kw16oqv5.
 ##Socail-network
 twitter_username:
 zhihu_username: guo-jian-70/
-weibo_username: 
+weibo_username:
 facebook_username:
 github_username: JayGJianGuo
 linkedin_username: 郭键-33937a153/
