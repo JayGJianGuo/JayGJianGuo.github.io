@@ -174,3 +174,12 @@ swiftype_key:
 archive:
     title: Archives
     description: 归档
+
+markdown-it:
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-emoji
