@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Hello Hexo
 tag: Coding Record
 ---
