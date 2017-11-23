@@ -102,6 +102,39 @@ a img:focus {
     cursor: zoom-in;
 }
 
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+
+strong, b{
+  color: #E83F32;
+}
+
+em, i {
+  color: #009688;
+  font-size: 1.04em;
+}
 
 blockquote {
     color: #808080;
@@ -883,11 +916,11 @@ img::-moz-selection {
     .one-tag-list .post-preview .post-meta {
         font-size: 18px;
     }
-	
+
 	.one-archive-list .post-preview {
 		margin-left: 40px;
 	}
-	
+
 	.archive-month {
 		margin-left: 20px;
 	}
@@ -1211,5 +1244,3 @@ img::-moz-selection {
     height:0;
     width:0;
 }
-
-
