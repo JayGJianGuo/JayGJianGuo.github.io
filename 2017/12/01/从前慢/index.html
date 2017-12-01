@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        170206-ORID｜Jaykey&#39;s blog
+        从前慢｜Jaykey&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="http://JayGJianGuo.github.io/2017/03/02/Coding Record/2017-03-02-170206-orid/">
+    <link rel="canonical" href="http://JayGJianGuo.github.io/2017/12/01/从前慢/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -125,153 +125,154 @@
 </script>
 
 <!-- Main Content -->
-
-<!--only post-->
-
-
-<img class="wechat-title-img"
-     src="https://ws2.sinaimg.cn/large/006tKfTcly1fljwyc35uxj31kw11x1l0.jpg">
-
-
 <style>
-    
-    header.intro-header {
-        background-image: url('https://ws2.sinaimg.cn/large/006tKfTcly1fljwyc35uxj31kw11x1l0.jpg');
+    .poetry-container {
+        background-color: rgba(255, 248, 220, 0.5);
+        padding-top: 43px;
+        margin-top: -43px;
+        text-align: center;
     }
 
-    
+    .poetry-container .poetry-content {
+        writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+        margin: 100px auto 0;
+        overflow: auto;
+        max-width: 90%;
+        max-height: 700px;
+        display: inline-block;
+        text-align: left;
+        padding: 5px 15px 30px;
+    }
+
+    .poetry-head {
+        width: 100%;
+        height: 56px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+    }
+
+    .poetry-container .poetry-content h2 {
+        color: #fff;
+        font-family: STkaiti;
+        font-size: 34px;
+        text-indent: 65px;
+        float: left;
+        margin-top: 0;
+    }
+
+    .poetry-container .poetry-content h2 span {
+        background-color: black;
+        padding: 2px 1px;
+        border-radius: 3px;
+    }
+
+    .poetry-container .poetry-content p {
+        clear: both;
+        font-size: 24px;
+        font-family: STSong;
+        letter-spacing: 8px;
+        text-shadow: 0 0 1px rgba(15, 15, 15, .3);
+        text-indent: 63px;
+        line-height: 40px;
+        margin: 0;
+    }
+
+    /* ipad */
+    @media screen and (max-width: 768px) {
+        .poetry-container .poetry-content {
+            max-height: 480px;
+            max-width: 100%;
+            margin: 80px auto 0;
+            padding-bottom: 10px;
+        }
+
+        .poetry-container .poetry-content p {
+            font-size: 16px;
+            text-indent: 46px;
+            line-height: 33px;
+            letter-spacing: 6px;
+            font-family: unset;
+        }
+
+        .poetry-container .poetry-content h2 {
+            margin-right: 6px;
+            font-size: 22px;
+            text-indent: 24px;
+            font-family: unset;
+        }
+
+        .poetry-container .poetry-content h2 span {
+            padding: 8px 5px;
+        }
+    }
+
+    /*手机屏幕*/
+    @media screen and (max-width: 400px) {
+        .poetry-container .poetry-content {
+            max-height: 410px;
+            padding-bottom: 20px;
+        }
+
+        .poetry-container .poetry-content p {
+            line-height: 30px;
+            letter-spacing: 3px;
+        }
+
+    }
+
+
 </style>
-
-<header class="intro-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <div class="post-heading">
-                    <h1>170206-ORID</h1>
-                    
-                    <span class="meta">
-                         作者 Jaykey Guo
-                        <span>
-                          日期 2017-03-02
-                         </span>
-                    </span>
-                    <div class="tags text-center">
-                        
-                        <a class="tag" href="/tags/#Coding Record"
-                           title="Coding Record">Coding Record</a>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="post-title-haojen">
-        <span>
-            170206-ORID
-        </span>
-    </div>
-</header>
-
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-            <!-- Post Container -->
-            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <p>ORID-170206</p>
-<ol>
-<li>每日学习纪录：ORID</li>
-<li>这是一个思考框架，利用 ORID 整理今天的思绪。</li>
-</ol>
-<p>Objective</p>
-<p>关于今天的课程, 你记得什么?</p>
-<p>对输出和输入的关系有了更深刻的了解，知道怎么样完成一个完整的功能，自己写了一次“删除”的功能。</p>
-<p>完成了什么?</p>
-<p>完成了购物网上年前部分的第二遍，开始了第三遍的基础建设。</p>
-<p>Reflective</p>
-<p>你要如何形容今天的情绪</p>
-<p>今天的高峰是什么?</p>
-<p>12：00–14：00，能集中尽力完成教程，效率高</p>
-<p>今天的低点是什么?</p>
-<p>晚上的21：00到22：00，因为犯困，而没办法快速完成代码的书写，对概念也不是很了解。</p>
-<p>Interpretive</p>
-<p>我们今天学到了什么?</p>
-<p>在controller中完成方法的定义之后，要在html中如何显示，才能完成一个完整的“小功能”，并且对学会的部分，熟记于心，能自己debug，在遇到红色报错的时候已经不会再紧张和纠结了，就是深吸一口气告诉自己一切都会过去的。</p>
-<p>今天一个重要的领悟是什么?</p>
-<p>当我以为为时已晚的时候，正是最好的时候，因为有快两周没有碰代码了，本以为对代码的感觉会生疏，谁知道，自己仍旧有那种肌肉记忆存在，这个过程真的不容易，同时也是很重要的。持续</p>
-<p>Decisional</p>
-<p>我们会如何用一句话形容今天的学习</p>
-<p>效率高就事半功倍，即使效率不高，学着调整的同时，也要找到外界的原因，环境？还是自己的心情，保护好自己的注意力。</p>
-<p>有哪些工作需要明天继续努力?</p>
-<p>持续持续持续，先来三十天再说别的。</p>
-
-                <hr>
-                
-
-                <ul class="pager">
-                    
-                    <li class="previous">
-                        <a href="/2017/03/02/Coding Record/2017-03-02-170207-orid/" data-toggle="tooltip" data-placement="top"
-                           title="170207-ORID">&larr; 上一篇</a>
-                    </li>
-                    
-                    
-                    <li class="next">
-                        <a href="/2017/03/02/Coding Record/170301-ORID/" data-toggle="tooltip" data-placement="top"
-                           title="170301-ORID">下一篇 &rarr;</a>
-                    </li>
-                    
-                </ul>
-
-                
-
-                
-
-
-                <!--加入新的评论系统-->
-                
-            </div>
-
-            <div class="hidden-xs col-sm-3 toc-col">
-                <div class="toc-wrap">
-                    
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <!-- Sidebar Container -->
-
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                <!-- Featured Tags -->
-                
-                <section>
-                    <!-- no hr -->
-                    <h5 class="text-center">
-                        <a href="/tags/">FEATURED TAGS</a>
-                    </h5>
-                    <div class="tags">
-                        
-                        <a class="tag" href="/tags/#Coding Record"
-                           title="Coding Record">Coding Record</a>
-                        
-                    </div>
-                </section>
-                
-
-                <!-- Friends Blog -->
-                
-            </div>
-        </div>
+<div class="poetry-container">
+    <!--导航黑色-->
+    <div class="poetry-head"></div>
+    <!--主内容-->
+    <div class="poetry-content">
+        <h2>
+                <span>
+                    从前慢
+                </span>
+        </h2>
+        <p>记得早先少年时</p>
+<p>大家诚诚恳恳</p>
+<p>说一句</p>
+<p>是一句</p>
+<p>清早上火车站</p>
+<p>长街黑暗无行人</p>
+<p>卖豆浆的小店冒着热气</p>
+<p>从前的日色变得慢</p>
+<p>车 马 邮件都慢</p>
+<p>一生只够爱一个人</p>
+<p>从前的锁也好看</p>
+<p>要是精美有样子</p>
+<p>你锁了</p>
+<p>人家就懂了</p>
 
     </div>
-</article>
+    <!--多说评论-->
+    <div class=" col-lg-6 col-lg-offset-3
+                        col-md-8 col-md-offset-2
+                        col-sm-10 col-sm-offset-1
+                        col-xs-12">
+        <hr>
+        
 
+        <ul class="pager">
+            
+            
+            <li class="next">
+                <a href="/2017/11/24/2017-11-24-女神～Gakki/" data-toggle="tooltip" data-placement="top"
+                   title="女神～Gakki">Next Post &rarr;</a>
+            </li>
+            
+        </ul>
 
+        
+    </div>
+
+</div>
 
 
 
