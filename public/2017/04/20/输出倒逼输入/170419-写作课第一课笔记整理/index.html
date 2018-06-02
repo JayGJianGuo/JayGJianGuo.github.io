@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="郭键在 Github 上的个人博客">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="https://ws2.sinaimg.cn/large/006tKfTcly1flgnrcadiij30go0gogpy.jpg">
+    <link rel="alternate" type="application/atom+xml" title="Jaykey" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        写作课第一课笔记整理｜Jaykey&#39;s blog
+        
+    </title>
+
+    <link rel="canonical" href="http://JayGJianGuo.github.io/2017/04/20/输出倒逼输入/170419-写作课第一课笔记整理/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('https://ws2.sinaimg.cn/large/006tKfTcgy1fli17yf6lvj31kw0w0b2b.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Jaykey
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/archives">Archive</a>
+                    </li>
+                    <li>
+                      <a href="/tags">Tags</a>
+                    </li>
+					
+                    
+                        
+                    
+                        
+                    
+
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="https://ws2.sinaimg.cn/large/006tKfTcly1fljwyc35uxj31kw11x1l0.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('https://ws2.sinaimg.cn/large/006tKfTcly1fljwyc35uxj31kw11x1l0.jpg');
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>写作课第一课笔记整理</h1>
+                    
+                    <span class="meta">
+                         作者 Jaykey Guo
+                        <span>
+                          日期 2017-04-20
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#输出倒逼输入"
+                           title="输出倒逼输入">输出倒逼输入</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            写作课第一课笔记整理
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <h5>第一部分是写作的原因？</h5>
+<p>写作是可以把一份时间卖很多次的极少数选择之一。写作的目的其实是为了达到有效沟通协作是与一群人的沟通过程，正常的情况是一对一的沟通，而且写作是一对多的沟通的过程，他能够更好的进行有效沟通。</p>
+<p>普通人可以通过写作达到财富自由，而在起点的时候，大多数人都是普通人，也就是起点时为零，没有执行的想法只不过是幻觉，在与他人对比这个方面，我们不应该拿现在的自己和现在的他人进行对比，而应该让未来自己和未来的对方进行对比，从这个角度来想的话，未来的自己就是我们现在应该也活在未来的。持续写作其实就是锻炼大脑一个最好的方式，它能够锻炼你的思考能力学习能力分析能力。</p>
+<h5>第二部分是对于写作的定义。</h5>
+<p>写作不是单纯的输出，写作的定义是对输入处理过的输出，这里就有三个重点，分别是输入处理和输出，这对你的情就是三个前提，要怎么样？达到高质量的一个写作，就是你需要有足够多的输入足够好的输入，其次是你要有个充分的处理，然后最后是输出，就是说你使用一些写作技巧，但写作技巧都是其次的。在写作过程当中，最重要的关键核心是你的思考能力，</p>
+<h5>第三个部分是不要低估写作的能力</h5>
+<p>绝大多数人，连说清楚表达自己意思的能力都没有，写作其实是倒逼自己思考质量的一个方式，你写作其实需要的过程就是大量的阅读和写作出书出，</p>
+<h5>第四个部分是不要神话写作写作</h5>
+<p>没有那么多很想深化的部分，嗯，他不需要人细心，也不需要你和他人进行对比，</p>
+<h5>第五个部分其实就是对写作的一个锻炼</h5>
+<p>就是五个阶段写作，第一个阶段是思考能力的一个锻炼，第二个阶段是对你表达能力。第三个阶段是尝试去输出你的价值观，第四个部分是形成一定的影响力，第五个部分是能够达到普度众生的效果，这六句话挺有意思，就是让那些自以为是的人错误地活着是对他们最好的惩罚，</p>
+<h5>第六个部分，指的是提高收入质量</h5>
+<p>书质量主要是取决于你的，读的书就是怎么样选好书，读书其实有两个方面，两个维度，一个叫多多，一个酱油瓶，多多们就读的量大而已，油品就是你知道什么好什么不好？选书的基本原则就是付费付费的肯定比不覆盖好好文章好的英文原版书。选书还有一个最底层的原则，就是从今往后再也不要向别人索要书单，这里有个题外话是说提高一线能力的基准是提高选择的标准，</p>
+<h5>第七个部分是对局价值观的一个提炼</h5>
+<p>就是，反复梳理的价值，反复树立你的价值观，你的价值观其实就主要是两个问题，就一个是非题，这个事情是对还是错，第二个问题是什么是重要的，什么更重要，什么最重要？这两个思考训练分别对应五个题，第一个提示，这个东西是对的吗？第二次什么更重要？第三个问题是什么最重要，第一个是第四个事情是什么绝对不能做，第五个事情是什么一定要坚持做下去，就五个问题可以套用在你不同的。场景里面，比如说你可以把它用到你这是朋友嗯，结交什么样的朋友是对的，在和朋友相处过程中弄什么事，更重要的？什么是最重要的，什么样的事情对朋友绝对不能做，什么样的朋友一定要坚持交往下去，</p>
+<p>写作的第一原则，或者说做事的第一原则是件事情，是正确的吗？我做真心是正确的，确定我做的，是对的吗？这里还有个作业作业有四个题，第二题是，分析读者的思路，第二个提示，对比自己的生活，作者是不是有点差异？第三个问题是我如何提高，我自己的思考质量？第四个问题是他有什么东西是雨雪作用哟。第四个问题是，还有什么东西是与写作具有同等价值的东西？这里有一个行动提示，买一个专门的本子，记录你对这些问题的思考，全面的思考训练，以及后面的这个作业。</p>
+
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2017/05/21/Daily Life/170521-生活至上/" data-toggle="tooltip" data-placement="top"
+                           title="生活至上">&larr; 上一篇</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2017/04/20/Daily Life/170420-旅行是生活的继续|那次台湾之行/" data-toggle="tooltip" data-placement="top"
+                           title="旅行是生活的继续|那次台湾之行">下一篇 &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-text">第一部分是写作的原因？</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-text">第二部分是对于写作的定义。</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-text">第三个部分是不要低估写作的能力</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-text">第四个部分是不要神话写作写作</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-text">第五个部分其实就是对写作的一个锻炼</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-text">第六个部分，指的是提高收入质量</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#undefined"><span class="toc-text">第七个部分是对局价值观的一个提炼</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#输出倒逼输入"
+                           title="输出倒逼输入">输出倒逼输入</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/guo-jian-70/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/JayGJianGuo">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/郭键-33937a153/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Jaykey 2018
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://JayGJianGuo.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="https://ws2.sinaimg.cn/large/006tKfTcly1flgnrcadiij30go0gogpy.jpg">
+</body>
+
+</html>
